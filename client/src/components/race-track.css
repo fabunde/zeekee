@@ -1,0 +1,43 @@
+.race-track{
+    position: relative;
+    background:grey;
+    height: 2000px;
+    width: 700px;
+    margin: 0 auto;
+    /* margin-top: -1300px;     */
+    animation: animateTrack 20s;
+}
+
+.finish-line{
+    background-color: red;
+    width: 100%;
+    height: 5px;
+}
+
+.track-line{
+    color: white;
+}
+
+.two-d-horse{
+    animation: animateTwoDHorse 30s;
+}
+
+@keyframes animateTrack {
+    from{
+        margin-top: -1300px;   
+    }
+
+    to{
+        margin-top: 0px;
+    }
+}
+
+@keyframes animateTwoDHorse {
+    from{
+        margin-bottom: 4px;   
+    }
+
+    to{
+        margin-bottom: 1950px;
+    }
+}
