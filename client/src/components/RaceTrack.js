@@ -3,6 +3,48 @@ import "./race-track.css"
 import TrackLine from './TrackLine'
 import TwoDHorse from './TwoDHorse'
 
+const horses = [
+    {
+        finishTime: 10
+    },
+
+    {
+        finishTime: 15
+    },
+
+    {
+        finishTime: 55
+    },
+    {
+        finishTime: 50
+    },
+    {
+        finishTime: 60
+    }
+]
+
+function Horses() {
+    return (
+        <>
+        {/* // <div style={{ */}
+        {/* //     display: 'flex', */}
+        {/* //     display: 'flex', */}
+        {/* //     alignItems: 'center', */}
+        {/* //     justifyContent: 'center' */}
+        {/* // }}> */}
+           
+           {
+               horses.map((horse, idx) => {
+                    return <TwoDHorse finishTime={horse.finishTime} style={{
+                        left: idx * 100
+                    }}/>
+               })
+           }
+            </>
+        // </div>
+    )
+}
+
 
 export default function RaceTrack() {
 
@@ -13,7 +55,7 @@ export default function RaceTrack() {
             <TrackLine/> 
             <TrackLine/> 
 
-            <TwoDHorse/>
+            <Horses/>
         </div>
     )
 }

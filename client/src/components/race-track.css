@@ -19,7 +19,9 @@
 }
 
 .two-d-horse{
-    animation: animateTwoDHorse 30s;
+    /* animation: animateTwoDHorse 30s; */
+    /* transition: all .2s ease; */
+    transition: all 25s linear;
 }
 
 @keyframes animateTrack {
